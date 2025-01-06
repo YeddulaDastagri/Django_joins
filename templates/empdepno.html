@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <table border="50px">
+        <tr>
+            <th>dpt_no</th> 
+            <th>ename</th> 
+            <th>sal</th> 
+            <th>emp_no</th> 
+            <th>job</th> 
+            <th>hiredate</th> 
+            <th>comm</th> 
+            <th>mgr</th> 
+            <th>dpt_no</th> 
+            <th>dname</th>  
+            <th>loc</th>
+
+        </tr>  
+    {% for leo in LEDO %} 
+        <tr>
+            <td>{{ leo.dpt_no }}</td> 
+            <td>{{ leo.ename }}</td> 
+            <td>{{ leo.sal }}</td> 
+            <td>{{ leo.emp_no }}</td> 
+            <td>{{ leo.job }}</td> 
+            <td>{{ leo.hiredate }}</td> 
+            <td>{{ leo.comm }}</td> 
+            <td>{{ leo.mgr }}</td> 
+            <td>{{ leo.dpt_no }}</td> 
+            <td>{{ leo.dname }}</td> 
+            <td>{{ leo.loc }}</td> 
+            
+        </tr> 
+    {% endfor %}
+    </table> 
+    
+</body>
+</html>
