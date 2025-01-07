@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <center>
+        <h1>depempdatapr</h1> 
+        {% for deo in LDEO %} 
+            <h1>Dname is {{deo.dname}}
+            dptno is {{deo.dpt_no}} 
+            dloc is {{deo.loc}}</h1>  
+            <table border="5px">
+                <tr>
+                    <th>ename</th> 
+                    <th>emp_no</th> 
+                    <th>sal</th>
+                </tr> 
+                {% for eo in deo.emp_set.all %} 
+                    <tr>
+                        <td>{{eo.ename}}</td> 
+                        <td>{{eo.emp_no}}</td> 
+                        <td>{{eo.sal}}</td>
+                    </tr> 
+                {% endfor %}
+            </table> 
+            {% endfor %}
+    </center>
+    
+</body>
+</html>
