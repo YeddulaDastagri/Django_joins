@@ -20,5 +20,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('empdepno/',empdepno,name='empdepno'),
+    path('empdepno/',empdepno,name='empdepno'), 
+    path('depempdatapr/',depempdatapr,name='depempdatapr'),
 ]
